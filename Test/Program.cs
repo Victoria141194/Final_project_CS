@@ -19,3 +19,25 @@ void PrintArray(string[] array)
     }
 }
 
+
+string[] FillSecondArray(string[] array1)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3) count++;
+    }
+    
+    string[] array2 = new string[count];
+    int indexOfArray2 = 0;
+    
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            array2[indexOfArray2] = array1[i];
+            indexOfArray2++;
+        }
+    }
+    return array2;
+}
