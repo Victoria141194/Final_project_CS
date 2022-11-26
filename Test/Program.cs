@@ -9,3 +9,13 @@ string[] array2 = FillSecondArray(array1);
 PrintArray(array1);
 Console.WriteLine();
 PrintArray(array2);
+
+//............................METHODS....................................
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine($"{array[i]} ");
+    }
+}
+
